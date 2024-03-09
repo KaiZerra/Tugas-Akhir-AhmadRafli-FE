@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: rgba(67, 104, 80, 1);
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-padding {
+  /* 1 rem = 16px. 5rem = 80px */
+  padding: 5rem 0;
+}
+/*Navbar*/
+nav {
+  background-color: var(--main-color);
+}
+.navbar {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 8px, 0;
+}
+
+.logo {
+  position: relative;
+}
+
+.navbar .navbar-item {
+  gap: 30px;
+  display: flex;
+}
+.navbar .navbar-item a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500px;
+  transition-duration: 400ms;
+}
+
+.navbar .navbar-item a:hover {
+  opacity: 0.5;
+}
+
+/* Navbar End */
+
+/* Home, about & materi Start */
+.home-container,
+.about-container,
+.materi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.home-container .home-text h3,
+.about-container .about-text h3 {
+  font-size: 44px;
+  font-weight: 700;
+}
+.home-container .home-text p,
+.about-container .about-text p,
+.materi-containers .materi-teks p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 30px;
+  width: 370px;
+  text-align: justify;
+}
+.home-container .home-text a {
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  transition-duration: 200ms;
+}
+
+.home-container .home-text a:hover {
+  opacity: 50%;
+}
+
+.materi-container .materi-teks h3 {
+  font-weight: 700px;
+  font-size: 44px;
+  line-height: 66px;
+  text-align: center;
+}
+
+.materi-container .materi-teks p {
+  font-size: 17px;
+  font-weight: 600px;
+  line-height: 30, 6px;
+  text-align: center;
+}
+
+
+
+/* Home & about End */
+
+/* Code Lang Start */
+.cdl-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1058px;
+  height: 429px;
+  margin: 0 auto;
+  gap: 25px;
+  padding-bottom: 200px;
+}
+
+.cdl-container .html-container,
+.cdl-container .css-container,
+.cdl-container .js-container {
+  background-color: white;
+  width: 336px;
+  height: 429px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  padding: 45px 33px;
+  gap: 10px;
+}
+
+.html-container .html-img,
+.css-container .css-img,
+.js-container .js-img {
+  display: flex;
+  justify-content: center;
+}
+
+.html-container .html-teks h3,
+.css-container .css-teks h3,
+.js-container .js-teks h3 {
+  font-weight: 700px;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.html-container .html-teks p,
+.css-container .css-teks p,
+.js-container .js-teks p {
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 28, 8px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.html-container .html-teks a,
+.css-container .css-teks a,
+.js-container .js-teks a {
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: 10px;
+  display: block;
+  margin: auto;
+  width: 140px;
+}
+
+.html-container .html-teks a:hover,
+.css-container .css-teks a:hover,
+.js-container .js-teks a:hover {
+  opacity: 50%;
+}
+
+/* Code Lang End*/
+
+/* Footer Start */
+.footer-container {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 8px, 0;
+  background: rgba(24, 23, 29, 1);
+  width: auto;
+  height: 366px;
+  top: 2096px;
+}
+
+.footer-container .learning-path h3,
+.footer-container .contact h3,
+.footer-container .social .social-teks h3 {
+  color: white;
+  font-weight: 700px;
+  size: 18px;
+  line-height: 20px;
+}
+
+.footer-container .learning-path p,
+.footer-container .logo {
+  color: white;
+}
+
+.footer-container .contact a {
+  color: white;
+  font-weight: 400;
+  size: 16px;
+  line-height: 25px;
+  transition-duration: 200ms;
+}
+.footer-container .social .social-teks {
+  width: 164px;
+  height: 20px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+}
+
+.footer-container .social .social-img .facebook,
+.footer-container .social .social-img .instagram,
+.footer-container .social .social-img .linkedin {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.footer-container .social .social-img .facebook a:hover,
+.footer-container .social .social-img .instagram a:hover,
+.footer-container .social .social-img .linkedin a:hover {
+  opacity: 50%;
+}
+
+.copyright {
+  background: rgba(24, 23, 29, 1);
+  top: 313px;
+  left: 575px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 50px;
+}
+.copyright h3{
+  color: white;
+font-size: 16px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+
+/* Footer End */
+
+@media (max-width: 390px) {
+  .navbar,
+  .home-container,
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .navbar{
+    width: max-content;
+  }
+  .home .home-text {
+    order: 2;
+  }
+  .home .home-img {
+    order: 1;
+  }
+
+  .cdl-container .html-container{
+    order: 1;
+    margin: auto;
+  }
+
+  .cdl-container .css-container{
+    order: 2;
+    margin: auto;
+  }
+
+  .cdl-container .js-container{
+    order: 3;
+    margin: auto;
+  }
+
+  .home-container .home-text p,
+  .about-container .about-text p {
+    font-size: 20px;
+    width: 370px;
+  }
+
+  .home-container .home-text h3,
+  .about-container .about-text h3 {
+    font-size: 32px;
+  }
+
+  .home-container .home-text a {
+    padding: 14px 24px;
+  }
+
+  .home-container .home-img img,
+  .about-container .about-img img {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .cdl-container{
+    flex-direction: column;
+    height: auto;
+    width: 390px;
+    align-items: center;
+  }
+
+  .footer-container  .sock{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container .sock .learning-path{
+    order: 1;
+    width: 80%;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+
+  .footer-container .sock .contact{
+    order: 2;
+    width: 80%;
+    align-items: flex-end;
+    margin-left: 20px;
+
+  }
+}
